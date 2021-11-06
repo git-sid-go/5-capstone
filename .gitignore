@@ -1,0 +1,6 @@
+eth-contracts/build/contracts
+
+# Dependency directories
+node_modules/
+
+.secret

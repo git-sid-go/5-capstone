@@ -75,8 +75,18 @@ contract("TestERC721Mintable", (accounts) => {
     });
 
     it("should return contract owner", async function () {
-      const owner = await this.contract.owner();
-      assert.equal(owner, account_one, "Incorrect contract owner");
+      const contractOwner = await this.contract.getOwner();
+      assert.equal(contractOwner, account_one, "Incorrect contract owner");
     });
   });
 });
+
+var expectThrow = async function (promise) {
+  try {
+    await promise;
+  } catch (error) {
+    assert.exists(error);
+    return;
+  }
+  assert.fail("Expected an error but didnt see one!");
+};
