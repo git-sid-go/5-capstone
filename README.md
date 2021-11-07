@@ -692,6 +692,14 @@ node scripts/mint.js
 * OpenSea Marketplace Buyer: https://testnets.opensea.io/git-sid-go
 * LiveSpaceToken Sale Transaction: https://rinkeby.etherscan.io/tx/0x3d299297963ccc33b11200e3522676372adcf0c02d29ad03a768239655c55148
 
+## Tokens purchased on OpenSea Testnet
+
+https://testnets.opensea.io/assets/0xb1d593e8bd67872006e25785d1896506372c2111/0
+https://testnets.opensea.io/assets/0xb1d593e8bd67872006e25785d1896506372c2111/1
+https://testnets.opensea.io/assets/0xb1d593e8bd67872006e25785d1896506372c2111/5
+https://testnets.opensea.io/assets/0xb1d593e8bd67872006e25785d1896506372c2111/2
+https://testnets.opensea.io/assets/0xb1d593e8bd67872006e25785d1896506372c2111/3
+
 # Versions
 
 - Truffle v5.0.36 (core: 5.0.36)

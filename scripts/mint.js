@@ -1,10 +1,11 @@
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const zokratesProof = [
+  require("./proof_0.json"),
   require("./proof_1.json"),
-  // require("./proof_2.json"),
-  // require("./proof_3.json"),
-  // require("./proof_4.json"),
-  // require("./proof_5.json"),
+  require("./proof_2.json"),
+  require("./proof_3.json"),
+  require("./proof_4.json"),
+  require("./proof_5.json"),
   // require("./proof_6.json"),
   // require("./proof_7.json"),
   // require("./proof_8.json"),
@@ -14,7 +15,7 @@ const web3 = require("web3");
 const OWNER_ADDRESS = process.env.OWNER_ADDRESS;
 const CONTRACT_ADDRESS = process.env.NFT_CONTRACT_ADDRESS;
 const NETWORK = process.env.NETWORK;
-const MINT_COUNT = 1;
+const MINT_COUNT = 6;
 const MNEMONIC = process.env.MNEMONIC;
 const INFURA_KEY = process.env.INFURA_KEY;
 
@@ -37,10 +38,10 @@ async function main() {
   if (CONTRACT_ADDRESS) {
     const livespaceToken = new web3Instance.eth.Contract(
       ABI,
-      CONTRACT_ADDRESS,
-      {
-        gasLimit: "1000000",
-      }
+      CONTRACT_ADDRESS
+      // {
+      //   gasLimit: "10000000",
+      // }
     );
     // tokens issued directly to the owner.
     for (let i = 0; i < MINT_COUNT; i++) {
